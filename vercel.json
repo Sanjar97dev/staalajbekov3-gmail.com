@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "app.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/api/products", "dest": "app.js" }
+    ],
+    "env": {
+      "MONGODB_URI": "mongodb+srv://staalajbekov3:gsjCNSB7NOfTnUXb@muslim.fnq3fpu.mongodb.net/?retryWrites=true&w=majority&appName=muslim"
+    }
+  }
+  
